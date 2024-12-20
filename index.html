@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Futbol Maçı Gol Takibi</title>
+</head>
+<body>
+    <h1>⚽ Futbol Maçı Gol Takibi ⚽</h1>
+
+    <div class="team" id="team-a">
+        <h2 id="team-a-name">Galatasaray</h2>
+        <p>Goller: <span id="team-a-goals" class="counter">0</span></p>
+        <div class="button-group">
+            <button onclick="incrementGoal('a')"><i class="fa-solid fa-plus"></i> Gol Artır</button>
+            <button onclick="decrementGoal('a')"><i class="fa-solid fa-minus"></i> Gol Azalt</button>
+            <button onclick="setGoal('a')"><i class="fa-solid fa-pen"></i> Gol Belirle</button>
+            <button onclick="changeTeamName('a')"><i class="fa-solid fa-user-edit"></i> İsim Değiştir</button>
+        </div>
+    </div>
+
+    <div class="team" id="team-b">
+        <h2 id="team-b-name">Fenerbahçe</h2>
+        <p>Goller: <span id="team-b-goals" class="counter">0</span></p>
+        <div class="button-group">
+            <button onclick="incrementGoal('b')"><i class="fa-solid fa-plus"></i> Gol Artır</button>
+            <button onclick="decrementGoal('b')"><i class="fa-solid fa-minus"></i> Gol Azalt</button>
+            <button onclick="setGoal('b')"><i class="fa-solid fa-pen"></i> Gol Belirle</button>
+            <button onclick="changeTeamName('b')"><i class="fa-solid fa-user-edit"></i> İsim Değiştir</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
